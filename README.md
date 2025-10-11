@@ -8,7 +8,7 @@ This project simulates a production-level data pipeline using Microsoft Fabric t
 ## 📊 Data Sources
 - **CSV Data (Azure Blob Storage):** Simulated raw game and player datasets from Kaggle representing production ingestion
 
-
+---
 
 ## 🛠 Tech Stack
 - **Platform:** Microsoft Fabric, Azure
@@ -21,12 +21,10 @@ This project simulates a production-level data pipeline using Microsoft Fabric t
 ---
 
 ## 🔄 Pipeline Workflow
-Ingest CSV files from Azure Blob into Bronze Lakehouse (Landing Zone)
-Transform data in Silver Lakehouse (Processed Zone) with cleansing, schema evolution, and deduplication
-Load enriched and modelled tables into Gold Lakehouse (Analytics Zone) for consumption
-Model fact and dimension tables following a Fact Constellation Schema
-Implement SCD Type 2 tracking and Delta Time Travel for historical accuracy
-Visualise insights in Power BI for player performance and game analytics
+-- **Azure Blob to Landing Zone:** Full load to raw landing zone partitioned by pipeline execution date
+-- **Landing Zone to Bronze Layer:** SCD Type 1 and incremental load to Delta format
+-- **Bronze Layer to Silver Layer:** Incremental load only. Cleaned exact copy of bronze layer
+-- **Silver Layer to Gold Layer:** SCD Type 2 to capture data evolution and incremental load
 
 ---
 
