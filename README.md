@@ -2,7 +2,6 @@
 
 🧊 From Ice to Insights – NHL Analytics Pipeline
 This project simulates a production-level data pipeline using Microsoft Fabric to process, transform, and analyse NHL game data. It implements a Medallion Architecture (Bronze → Silver → Gold) for ingestion, transformation, and visualisation, enabling faster, data-driven insights into player and team performance.
-🎯 Goal: Build a robust, scalable, and fault-tolerant data platform to support analytical and scouting use cases for sports performance optimisation.
 
 ---
 
@@ -12,12 +11,12 @@ CSV Data (Azure Blob Storage): Simulated raw game and player datasets from Kaggl
 ---
 
 ## 🛠 Tech Stack
-Data Platform: Microsoft Fabric, OneLake, Azure Blob
-Processing Engine: PySpark, Databricks Runtime
-Data Quality & Validation: Great Expectations
-Storage Format: Delta Lake
-Visualisation: Power BI, SQL Analytics
-Security & Compliance: RBAC, RLS/CLS, Data Masking, ZRS (12 9s durability)
+- **Platform:** Microsoft Fabric, Azure
+- **Storage:** Delta Lakehouse, Azure Blob Storage
+- **Processing Enging:** PySpark, SQL Analytics Endpoint
+- **Data Quality & Validation:** Great Expectations  
+- **Security & Compliance:** RBAC, OneLake Security, RLS/CLS, Data Masking
+- **Visualisation**: Power BI
 
 ---
 
