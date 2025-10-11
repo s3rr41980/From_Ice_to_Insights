@@ -21,10 +21,10 @@ This project simulates a production-level data pipeline using Microsoft Fabric t
 ---
 
 ## 🔄 Pipeline Workflow
--- **Azure Blob to Landing Zone:** Full load to raw landing zone partitioned by pipeline execution date
--- **Landing Zone to Bronze Layer:** SCD Type 1 and incremental load to Delta format
--- **Bronze Layer to Silver Layer:** Incremental load only. Cleaned exact copy of bronze layer
--- **Silver Layer to Gold Layer:** SCD Type 2 to capture data evolution and incremental load
+- **Azure Blob to Landing Zone:** Full load to raw landing zone partitioned by pipeline execution date
+- **Landing Zone to Bronze Layer:** SCD Type 1 and incremental load to Delta format
+- **Bronze Layer to Silver Layer:** Incremental load only. Cleaned exact copy of bronze layer
+- **Silver Layer to Gold Layer:** SCD Type 2 to capture data evolution and incremental load
 
 ---
 
