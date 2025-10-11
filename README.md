@@ -13,7 +13,7 @@ This project simulates a production-level data pipeline using Microsoft Fabric t
 ## 🛠 Tech Stack
 - **Platform:** Microsoft Fabric, Azure
 - **Storage:** Delta Lakehouse, Azure Blob Storage
-- **Processing Enging:** PySpark, SQL Analytics Endpoint
+- **Processing Enging:** Notebooks (Spark Runtime), Data Pipelines, SQL Analytics Endpoint
 - **Data Quality & Validation:** Great Expectations  
 - **Security & Compliance:** RBAC, OneLake Security, RLS/CLS, Data Masking
 - **Visualisation**: Power BI
