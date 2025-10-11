@@ -8,7 +8,7 @@ This project simulates a production-level data pipeline using Microsoft Fabric t
 ## 📊 Data Sources
 - **CSV Data (Azure Blob Storage):** Simulated raw game and player datasets from Kaggle representing production ingestion
 
----
+
 
 ## 🛠 Tech Stack
 - **Platform:** Microsoft Fabric, Azure
