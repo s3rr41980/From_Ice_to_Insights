@@ -42,12 +42,13 @@ Environment: Dev → Test → Prod
 ---
 
 ## 🌟 Key Features
-Automated Orchestration: Parameterised ingestion and dynamic partitioning
-Data Quality: Fault-tolerant, idempotent, and deduplication-enabled workflows
-Scalability: Supports incremental and upsert-based loading
-Data Lineage: Partitioned landing zone for CDC and SCD Type 2 tracking
-Observability: Error alerts, logging, and pipeline recovery
-Security: RLS/CLS, masking, and role-based access
+- **Optimization:** Parallel execution and strategic load patterns (overwrite, incremental, upsert)
+- **Scalable:** Parameterized ingestion with dynamic adaptation
+- **Quality:** Automated data-quality check, fault tolerant, idempotent and deduplication
+- **Monitoring:** Automated failure handling, error alerts, and logging
+- **Data Modelling:** Fact constellation schema
+- **Data Lineage:** Partitioned landing zone for CDC, SCD Type 2, Delta time travel
+- **Compliance & Reliability:** RBAC, RLS/CLS, data masking, OneLake ZRS (12 9s durability)
 
 ---
 
