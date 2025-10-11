@@ -11,7 +11,7 @@ CSV Data (Azure Blob Storage): Simulated raw game and player datasets from Kaggl
 
 ---
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 Data Platform: Microsoft Fabric, OneLake, Azure Blob
 Processing Engine: PySpark, Databricks Runtime
 Data Quality & Validation: Great Expectations
@@ -21,7 +21,7 @@ Security & Compliance: RBAC, RLS/CLS, Data Masking, ZRS (12 9s durability)
 
 ---
 
-🔄 Pipeline Workflow
+## 🔄 Pipeline Workflow
 Ingest CSV files from Azure Blob into Bronze Lakehouse (Landing Zone)
 Transform data in Silver Lakehouse (Processed Zone) with cleansing, schema evolution, and deduplication
 Load enriched and modelled tables into Gold Lakehouse (Analytics Zone) for consumption
@@ -31,7 +31,7 @@ Visualise insights in Power BI for player performance and game analytics
 
 ---
 
-🧩 Architecture
+## 🧩 Architecture
 Medallion Layers:
 Bronze Lakehouse (Landing Zone): Ingest raw CSV data from Azure Blob Storage
 Silver Lakehouse (Processed Zone): Cleanse, transform, and standardise data into relational schema
@@ -40,7 +40,7 @@ Environment: Dev → Test → Prod
 
 ---
 
-🌟 Key Features
+## 🌟 Key Features
 Automated Orchestration: Parameterised ingestion and dynamic partitioning
 Data Quality: Fault-tolerant, idempotent, and deduplication-enabled workflows
 Scalability: Supports incremental and upsert-based loading
@@ -50,5 +50,5 @@ Security: RLS/CLS, masking, and role-based access
 
 ---
 
-🎓 Skills Demonstrated
+## 🎓 Skills Demonstrated
 Microsoft Fabric · Databricks · PySpark · Azure Blob · Delta Lake · Power BI · SQL Analytics · OneLake · Great Expectations · Data Modelling · SCD Type 2 · Data Quality Automation
