@@ -3,20 +3,50 @@
 **Overview**
 This project simulates a production-level data pipeline using Microsoft Fabric to process, transform, and analyse NHL game data. It implements a Medallion Architecture (Bronze → Silver → Gold) for ingestion, transformation, and visualisation, enabling faster, data-driven insights into player and team performance.
 
-**Architecture**
-Medallion Layers:
-- Bronze Lakehouse (Landing Zone): Ingest raw CSV data from Azure Blob Storage.
-- Silver Lakehouse (Processed Zone): Clean, transform, and standardise data into a relational schema for machine learning or downstream analytics.
-- Gold Lakehouse (Analytics Zone): Model facts and dimensions for Power BI visualisation and advanced reporting.
-Environment: Dev → Test → Prod Lakehouses
+🧊 From Ice to Insights – NHL Analytics Pipeline
+This project simulates a production-level data pipeline using Microsoft Fabric to process, transform, and analyse NHL game data. It implements a Medallion Architecture (Bronze → Silver → Gold) for ingestion, transformation, and visualisation, enabling faster, data-driven insights into player and team performance.
+🎯 Goal: Build a robust, scalable, and fault-tolerant data platform to support analytical and scouting use cases for sports performance optimisation.
 
-**Key Features**
-**Source**: CSV data in Azure Blob Storage simulating production ingestion
-**Architecture**: Medallion Architecture on Lakehouses with Dev-Test-Prod environments
-**Optimization**: Parallel execution and strategic load patterns (overwrite, incremental, upsert)
-**Scalable**: Parameterized ingestion with dynamic adaptation
-**Quality**: Automated data-quality check, fault tolerant, idempotent and deduplication
-**Monitoring**: Automated failure handling, error alerts, and logging
-**Data Modellin**g: Fact constellation schema
-**Data Lineage**: Partitioned landing zone for CDC, SCD Type 2, Delta time travel
-**Compliance & Reliability**: RBAC, RLS/CLS, data masking, OneLake ZRS (12 9s durability)
+
+📊 Data Sources
+CSV Data (Azure Blob Storage): Simulated raw game and player datasets representing production ingestion
+NHL Dataset (Kaggle): Supplementary player statistics and metadata for analytics enrichment
+
+
+🛠 Tech Stack
+Data Platform: Microsoft Fabric, OneLake, Azure Blob
+Processing Engine: PySpark, Databricks Runtime
+Data Quality & Validation: Great Expectations
+Storage Format: Delta Lake
+Visualisation: Power BI, SQL Analytics
+Security & Compliance: RBAC, RLS/CLS, Data Masking, ZRS (12 9s durability)
+
+
+🔄 Pipeline Workflow
+Ingest CSV files from Azure Blob into Bronze Lakehouse (Landing Zone)
+Transform data in Silver Lakehouse (Processed Zone) with cleansing, schema evolution, and deduplication
+Load enriched and modelled tables into Gold Lakehouse (Analytics Zone) for consumption
+Model fact and dimension tables following a Fact Constellation Schema
+Implement SCD Type 2 tracking and Delta Time Travel for historical accuracy
+Visualise insights in Power BI for player performance and game analytics
+
+
+🧩 Architecture
+Medallion Layers:
+Bronze Lakehouse (Landing Zone): Ingest raw CSV data from Azure Blob Storage
+Silver Lakehouse (Processed Zone): Cleanse, transform, and standardise data into relational schema
+Gold Lakehouse (Analytics Zone): Model facts and dimensions for Power BI visualisation
+Environment: Dev → Test → Prod
+
+
+🌟 Key Features
+Automated Orchestration: Parameterised ingestion and dynamic partitioning
+Data Quality: Fault-tolerant, idempotent, and deduplication-enabled workflows
+Scalability: Supports incremental and upsert-based loading
+Data Lineage: Partitioned landing zone for CDC and SCD Type 2 tracking
+Observability: Error alerts, logging, and pipeline recovery
+Security: RLS/CLS, masking, and role-based access
+
+
+🎓 Skills Demonstrated
+Microsoft Fabric · Databricks · PySpark · Azure Blob · Delta Lake · Power BI · SQL Analytics · OneLake · Great Expectations · Data Modelling · SCD Type 2 · Data Quality Automation
