@@ -1,17 +1,15 @@
 # From_Ice_to_Insights
 
-**Overview**
-This project simulates a production-level data pipeline using Microsoft Fabric to process, transform, and analyse NHL game data. It implements a Medallion Architecture (Bronze → Silver → Gold) for ingestion, transformation, and visualisation, enabling faster, data-driven insights into player and team performance.
-
 🧊 From Ice to Insights – NHL Analytics Pipeline
 This project simulates a production-level data pipeline using Microsoft Fabric to process, transform, and analyse NHL game data. It implements a Medallion Architecture (Bronze → Silver → Gold) for ingestion, transformation, and visualisation, enabling faster, data-driven insights into player and team performance.
 🎯 Goal: Build a robust, scalable, and fault-tolerant data platform to support analytical and scouting use cases for sports performance optimisation.
 
+---
 
 📊 Data Sources
-CSV Data (Azure Blob Storage): Simulated raw game and player datasets representing production ingestion
-NHL Dataset (Kaggle): Supplementary player statistics and metadata for analytics enrichment
+CSV Data (Azure Blob Storage): Simulated raw game and player datasets from Kaggle representing production ingestion
 
+---
 
 🛠 Tech Stack
 Data Platform: Microsoft Fabric, OneLake, Azure Blob
@@ -21,6 +19,7 @@ Storage Format: Delta Lake
 Visualisation: Power BI, SQL Analytics
 Security & Compliance: RBAC, RLS/CLS, Data Masking, ZRS (12 9s durability)
 
+---
 
 🔄 Pipeline Workflow
 Ingest CSV files from Azure Blob into Bronze Lakehouse (Landing Zone)
@@ -30,6 +29,7 @@ Model fact and dimension tables following a Fact Constellation Schema
 Implement SCD Type 2 tracking and Delta Time Travel for historical accuracy
 Visualise insights in Power BI for player performance and game analytics
 
+---
 
 🧩 Architecture
 Medallion Layers:
@@ -38,6 +38,7 @@ Silver Lakehouse (Processed Zone): Cleanse, transform, and standardise data into
 Gold Lakehouse (Analytics Zone): Model facts and dimensions for Power BI visualisation
 Environment: Dev → Test → Prod
 
+---
 
 🌟 Key Features
 Automated Orchestration: Parameterised ingestion and dynamic partitioning
@@ -47,6 +48,7 @@ Data Lineage: Partitioned landing zone for CDC and SCD Type 2 tracking
 Observability: Error alerts, logging, and pipeline recovery
 Security: RLS/CLS, masking, and role-based access
 
+---
 
 🎓 Skills Demonstrated
 Microsoft Fabric · Databricks · PySpark · Azure Blob · Delta Lake · Power BI · SQL Analytics · OneLake · Great Expectations · Data Modelling · SCD Type 2 · Data Quality Automation
