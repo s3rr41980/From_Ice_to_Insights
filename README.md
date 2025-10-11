@@ -21,10 +21,14 @@ This project simulates a production-level data pipeline using Microsoft Fabric t
 ---
 
 ## 🔄 Pipeline Workflow
-- **Azure Blob to Landing Zone:** Full load to raw landing zone partitioned by pipeline execution date
-- **Landing Zone to Bronze Layer:** SCD Type 1 and incremental load to Delta format
-- **Bronze Layer to Silver Layer:** Incremental load only. Cleaned exact copy of bronze layer
-- **Silver Layer to Gold Layer:** SCD Type 2 to capture data evolution and incremental load
+- **Dynamic Landing Zone Creation:** Automatically provisions a partitioned folder structure (by execution date) in Fabric Lakehouse for traceable raw ingestion whenever the pipeline runs
+- **Metadata-Driven Ingestion:** Dynamically retrieves and processes file metadata, enabling fully parameterised and scalable ingestion across datasets
+- **Bronze Load (Raw to Delta):** Performs full and incremental loads into the Bronze layer (Delta format) based on the latest partitioned folder in the landing zone
+- **Data Quality Validation:** Integrates Great Expectations to enforce automated data-quality checks for validity, completeness, and conformity
+- **Promotion to Silver Layer:** Cleanses, structures, and standardises datasets replicated from Bronze for downstream consumption
+- **Gold Layer Load:** Applies SCD Type 2 logic for player and team dimension tables to track historical changes, and incremental updates for fact tables
+- **Semantic Model Refresh:** Triggers Power BI dataset and semantic model refresh for up-to-date analytics and dashboards
+- **Automated Monitoring & Alerts:** Sends success and failure notifications to Microsoft Teams, while logging failure metrics for observability and pipeline reliability
 
 ---
 
