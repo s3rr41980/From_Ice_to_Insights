@@ -48,7 +48,7 @@ Environment: Dev → Test → Prod
 - **Monitoring:** Automated failure handling, error alerts, and logging
 - **Data Modelling:** Fact constellation schema
 - **Data Lineage:** Partitioned landing zone for CDC, SCD Type 2, Delta time travel
-- **Compliance & Reliability:** RBAC, RLS/CLS, data masking, OneLake ZRS (12 9s durability)
+- **Compliance & Reliability:** RBAC, RLS/CLS, data masking, OneLake Security, OneLake ZRS (12 9s durability)
 
 ---
 
