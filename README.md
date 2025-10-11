@@ -33,12 +33,12 @@ This project simulates a production-level data pipeline using Microsoft Fabric t
 ---
 
 ## 🧩 Data Modelling (Constellion Schema)
-- **Initial Challenge:** Discovered that dimensional modelling was more complex than anticipated, requiring a deeper understanding of relationships, keys, and granularity.
-- **Leveraging Kimball Principle:**s → Applied Kimball’s methodology to map initial facts and dimensions in Excel, iterating through multiple schema proposals.
-- **Ambiguous Columns:** → Addressed ambiguity where attributes could belong to either fact or dimension tables, refining definitions for consistency.
-- **Understanding Granularity:** → Ensured each fact table maintained a consistent level of detail, supporting accurate joins and aggregations.
-- **Near Misses:** → Faced several divergent schema designs before achieving alignment between fact tables and conformed dimensions.
-- **Success through Refinement:** → Through iterative comparison and validation, finalised a robust Galaxy Schema that supports analytical flexibility and scalability.
+- **Initial Challenge:** Discovered that dimensional modelling was more complex than anticipated, requiring a deeper understanding of relationships, keys, and granularity
+- **Leveraging Kimball Principle:**s → Applied Kimball’s methodology to map initial facts and dimensions in Excel, iterating through multiple schema proposals
+- **Ambiguous Columns:** → Addressed ambiguity where attributes could belong to either fact or dimension tables, refining definitions for consistency
+- **Understanding Granularity:** → Ensured each fact table maintained a consistent level of detail, supporting accurate joins and aggregations
+- **Near Misses:** → Faced several divergent schema designs before achieving alignment between fact tables and conformed dimensions
+- **Success through Refinement:** → Through iterative comparison and validation, finalised a robust Galaxy Schema that supports analytical flexibility and scalability
 
 ---
 
