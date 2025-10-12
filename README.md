@@ -1,8 +1,7 @@
 ## 🧊 From Ice to Insights – NHL Analytics Pipeline
 
-##### This project simulates a production-level data pipeline using Microsoft Fabric to process, transform, and analyse NHL game data. Designed and implemented an end-to-end metadata-driven ingestion data pipeline using a medallion (Bronze–Silver–Gold) architecture. 
+###### This project simulates a production-grade data pipeline built on Microsoft Fabric, designed to process, transform, and analyse NHL game data. It features a metadata-driven ingestion framework following the Medallion (Bronze–Silver–Gold) architecture. The pipeline automates landing zone creation, performs incremental ingestion, validates data quality with Great Expectations, applies SCD Type 2 for historical tracking, and triggers Power BI semantic model refreshes. End-to-end monitoring and Microsoft Teams alerts ensure reliability, observability, and operational transparency.
 
-##### The solution automates dynamic landing zone creation, performs incremental ingestion, enforces data quality using Great Expectations, handles SCD Type 2 for historical tracking, refreshes a Power BI semantic model, and provides Teams-based alerting and observability.
 ---
 
 ## 📊 Data Sources
