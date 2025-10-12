@@ -21,7 +21,7 @@
 
 ## 🔄 Pipeline Workflow
 - **Dynamic Landing Zone Creation:** Automatically provisions a partitioned folder structure (by execution date) in Fabric Lakehouse for traceable raw ingestion whenever the pipeline runs
-- **Metadata-Driven Ingestion:** Dynamically retrieves and processes file metadata, enabling fully parameterised and scalable ingestion across datasets
+- **Parameterized Ingestion:** Dynamically retrieves and processes file metadata, enabling fully parameterised and scalable ingestion across datasets
 - **Bronze Load (Raw to Delta):** Performs full and incremental loads into the Bronze layer (Delta format) based on the latest partitioned folder in the landing zone
 - **Data Quality Validation:** Integrates Great Expectations to enforce automated data-quality checks for validity, completeness, and conformity
 - **Promotion to Silver Layer:** Cleanses, structures, and standardises datasets replicated from Bronze for downstream consumption
