@@ -2,7 +2,7 @@
 
 ##### This project simulates a production-level data pipeline built on Microsoft Fabric, designed to process, transform, and analyse NHL game data. It features a parameterized ingestion framework following the Medallion (Bronze–Silver–Gold) architecture. The pipeline automates landing zone creation, performs strategic load patterns, validates data quality with Great Expectations, applies SCD Type 2 for historical tracking, and triggers Power BI semantic model refreshes. End-to-end monitoring and Microsoft Teams alerts ensure reliability, observability, and operational transparency.
 
-
+![Overall Project Architecture](Pipeline%20Architecture%20Image.png)
 
 ---
 
